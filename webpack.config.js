@@ -1,8 +1,12 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: "./src/index.js",
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
@@ -12,10 +16,25 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
+        use: [
+          {
+            loader: "babel-loader",
+          },
+        ],
       },
     ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Hot Module Replacement",
+      template: "src/index.html",
+      bundle: "root",
+    }),
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 9000,
+    hot: true,
   },
 };
