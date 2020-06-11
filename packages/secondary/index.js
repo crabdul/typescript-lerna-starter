@@ -1,1 +1,1 @@
-export { default as World } from "src/World.jsx";
+export { default as World } from "./src/World";

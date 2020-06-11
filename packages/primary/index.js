@@ -1,1 +1,1 @@
-export { default as Hello } from "src/Hello.jsx";
+export { default as Hello } from "./src/Hello";
