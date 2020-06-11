@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bootstrap": "lerna bootstrap --use-workspaces"
   },
   "author": "",
   "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.1",
     "lerna": "^3.22.1",
