@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Hello => <p>hello</p>
+const World => <p>world</p>
 
-export default Hello
+export default World
