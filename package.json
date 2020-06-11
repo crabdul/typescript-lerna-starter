@@ -12,7 +12,10 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
     "@babel/preset-typescript": "^7.10.1",
+    "babel-loader": "^8.1.0",
     "lerna": "^3.22.1",
     "typescript": "^3.9.5",
     "webpack": "^4.43.0",
