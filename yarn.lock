@@ -2625,14 +2625,6 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-"build-monorepo@file:interfaces/mainsite":
-  version "1.0.0"
-  dependencies:
-    primary "file:../../../../Library/Caches/Yarn/v6/npm-build-monorepo-1.0.0-bacda4c0-cd3d-4557-b445-b46188f5641d-1592046053191/packages/primary"
-    react "^16.13.1"
-    react-dom "^16.13.1"
-    secondary "file:../../../../Library/Caches/Yarn/v6/npm-build-monorepo-1.0.0-bacda4c0-cd3d-4557-b445-b46188f5641d-1592046053191/packages/secondary"
-
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
@@ -6807,11 +6799,6 @@ pretty-error@^2.1.1:
     renderkid "^2.0.1"
     utila "~0.4"
 
-"primary@file:packages/primary":
-  version "1.0.0"
-  dependencies:
-    react "^16.13.1"
-
 private@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -7501,11 +7488,6 @@ schema-utils@^2.6.5:
     "@types/json-schema" "^7.0.4"
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
-
-"secondary@file:packages/secondary":
-  version "1.0.0"
-  dependencies:
-    react "^16.13.1"
 
 select-hose@^2.0.0:
   version "2.0.0"
