@@ -1,5 +1,6 @@
 .git
 node_modules
-lib
 dist
+lib
 tsconfig.tsbuildinfo
+tsconfig.build.tsbuildinfo
