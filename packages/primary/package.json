@@ -2,13 +2,17 @@
   "name": "primary",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.5"
   }
 }

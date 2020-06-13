@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Hello } from "primary";
 import { World } from "secondary";
 

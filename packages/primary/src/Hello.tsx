@@ -1,5 +1,9 @@
-import React from "react";
+import * as React from "react";
 
-const Hello = () => <p>Hello</p>;
+interface Props {
+  name: string;
+}
+
+const Hello = (props: Props) => <p>Hello {props.name}</p>;
 
 export default Hello;

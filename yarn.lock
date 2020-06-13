@@ -6701,6 +6701,11 @@ pretty-error@^2.1.1:
     renderkid "^2.0.1"
     utila "~0.4"
 
+"primary@file:packages/primary":
+  version "1.0.0"
+  dependencies:
+    react "^16.13.1"
+
 private@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -7390,6 +7395,11 @@ schema-utils@^2.6.5:
     "@types/json-schema" "^7.0.4"
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
+
+"secondary@file:packages/secondary":
+  version "1.0.0"
+  dependencies:
+    react "^16.13.1"
 
 select-hose@^2.0.0:
   version "2.0.0"
