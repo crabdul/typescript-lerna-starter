@@ -2,8 +2,8 @@
   "name": "secondary",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "module": "src/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "symlink-bins": "lerna exec \"rm -r node_modules/.bin ; mkdir node_modules ; ln -s ../../../node_modules/.bin node_modules/.bin\"",
     "build:types": "tsc --emitDeclarationOnly"
