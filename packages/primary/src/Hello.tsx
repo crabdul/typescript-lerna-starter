@@ -1,9 +1,9 @@
 import * as React from "react";
 
-interface Props {
+interface HelloProps {
   name: string;
 }
 
-const Hello = (props: Props) => <p>Hello {props.name}</p>;
+const Hello = (props: HelloProps) => <p>Hello {props.name}</p>;
 
 export default Hello;
