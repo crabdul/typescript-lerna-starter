@@ -2,9 +2,11 @@
   "name": "secondary",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "symlink-bins": "lerna exec \"rm -r node_modules/.bin ; mkdir node_modules ; ln -s ../../../node_modules/.bin node_modules/.bin\"",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "author": "",
   "license": "ISC",

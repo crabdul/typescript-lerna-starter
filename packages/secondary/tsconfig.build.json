@@ -9,11 +9,6 @@
     ],
     "exclude": [
         "node_modules",
-        "./node_modules/**/*",
         "**/*.spec.ts"
-    ],
-    "references": [
-        { "path": "../../packages/primary" },
-        { "path": "../../packages/secondary" }
     ]
 }
