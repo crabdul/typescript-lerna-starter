@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "symlink-bins": "lerna exec \"rm -r node_modules/.bin ; mkdir node_modules ; ln -s ../../../node_modules/.bin node_modules/.bin\"",
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "npx webpack",
     "start": "npx webpack-dev-server --hot --inline"
