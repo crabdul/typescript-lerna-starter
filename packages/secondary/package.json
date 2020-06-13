@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "fork-ts-checker-webpack-plugin": "^5.0.0"
   }
 }

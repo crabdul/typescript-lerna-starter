@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -30,6 +31,7 @@ module.exports = {
       template: "src/index.html",
       bundle: "root",
     }),
+    new ForkTsCheckerWebpackPlugin(),
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),
