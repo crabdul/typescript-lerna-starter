@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces"
+    "bootstrap": "lerna exec yarn"
   },
   "author": "",
   "license": "ISC",
@@ -30,8 +30,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "build-monorepo": "file:interfaces/mainsite",
-    "primary": "file:packages/primary",
-    "secondary": "file:packages/secondary"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "build-monorepo",
+  "name": "mainsite",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -11,13 +11,26 @@
   "author": "",
   "license": "ISC",
   "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "react-hot-loader": "^4.12.21",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
   "dependencies": {
-    "primary": "file:../../packages/primary",
+    "primary": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "secondary": "file:../../packages/secondary"
-  },
-  "devDependencies": {
-    "fork-ts-checker-webpack-plugin": "^5.0.0"
+    "secondary": "1.0.0"
   }
 }
