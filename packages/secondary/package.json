@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "symlink-bins": "lerna exec \"rm -r node_modules/.bin ; mkdir node_modules ; ln -s ../../../node_modules/.bin node_modules/.bin\"",
-    "build:types": "tsc --emitDeclarationOnly"
+    "build:types": "tsc --emitDeclarationOnly --declaration --out lib/index.js && echo '\ndeclare module \"secondary\"' >> lib/index.d.ts"
   },
   "author": "",
   "license": "ISC",
