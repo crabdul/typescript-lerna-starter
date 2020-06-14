@@ -6,6 +6,7 @@
         "paths": {
             "primary": ["primary/src"],
             "secondary": ["secondary/src"]
-        }
+        },
+        "inlineSourceMap": true
     }
 }
