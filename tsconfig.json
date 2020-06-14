@@ -1,6 +1,6 @@
 {
-    "extends": "./tsconfig.build.json",
-
+    "__comment": "Dev tsconfig",
+    "extends": "./tsconfig.base.json",
     "compilerOptions": {
         "baseUrl": "./packages",
         "paths": {
