@@ -1,24 +1,7 @@
 {
+    "__comment": "Base tsconfig",
     "compilerOptions": {
-        "__comment": "PROJECT OPTIONS",
-        "allowSyntheticDefaultImports": true,
-        "__comment": "PROJECT OPTIONS",
-        "__comment": "Allow JavaScript files to be compiled",
-        "allowJs": true,
-        "__comment": "Allow JavaScript files to be compiled",
-        "declaration": true,
-        "__comment": "Generates a sourcemap for each corresponding ‘.d.ts’ file",
-        "declarationMap": true,
-        "__comment": "Detect the least costly way to type-check and emit changes to your project",
-        "incremental": true,
-        "__comment": "Support JSX in .tsx files",
-        "jsx": "react",
-        "__comment": "Raise error on expressions and declarations with an implied any type",
-        "noImplicitAny": true,
-        "__comment": "Specify ECMAScript target version",
-        "target": "es5",
-        "__comment": "MODULE RESOLUTION",
-        "__comment": "Import non-ES modules as default imports",
-        "esModuleInterop": true,
+        "lib": ["es6"],
+        "noUnusedLocals": true
     }
 }

@@ -1,6 +1,6 @@
 {
     "__comment": "Build tsconfig",
-    "extends": "../../tsconfig.base.json",
+    "extends": "../../tsconfig.build.base.json",
     "compilerOptions": {
         "outDir": "lib",
         "rootDir": "src",
