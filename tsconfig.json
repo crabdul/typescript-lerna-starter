@@ -7,6 +7,7 @@
             "primary": ["primary/src"],
             "secondary": ["secondary/src"]
         },
-        "inlineSourceMap": true
+        "inlineSourceMap": true,
+        "incremental": true
     }
 }

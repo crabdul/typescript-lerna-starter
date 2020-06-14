@@ -1,0 +1,25 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+jobs:
+  build-primary-declaration:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: cd packages/primary && yarn run build:types
+  build-secondary-declaration:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: cd packages/secondary && yarn run build:types
+workflows:
+    mainsite:
+      jobs:
+        - build-primary-declaration
+        - build-secondary-declaration
