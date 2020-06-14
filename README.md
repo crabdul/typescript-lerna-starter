@@ -1,6 +1,10 @@
 
 ## Reading
 
+### Compiler options
+
+- [Article on various options](https://medium.com/javascript-in-plain-english/typescript-configuration-options-tsconfig-json-561d4a2ad4b)
+
 ### Declaration files
 
  - [Article explaining declaration files and different uses based on TypeScript
