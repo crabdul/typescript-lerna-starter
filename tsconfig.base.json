@@ -1,16 +1,7 @@
 {
+    "__comment": "Base tsconfig",
     "compilerOptions": {
-        "allowSyntheticDefaultImports": true,
-        "outDir": "./dist/",
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "esModuleInterop": true,
-        "noImplicitAny": true,
-        "target": "es5",
-        "jsx": "react",
-        "__comment": "Detect the least costly way to type-check and emit changes to your project",
-        "incremental": true,
-        "allowJs": true
+        "lib": ["es6"],
+        "noUnusedLocals": true
     }
 }
