@@ -9,6 +9,8 @@
         "noImplicitAny": true,
         "target": "es5",
         "jsx": "react",
+        "__comment": "Detect the least costly way to type-check and emit changes to your project",
+        "incremental": true,
         "allowJs": true
     }
 }
