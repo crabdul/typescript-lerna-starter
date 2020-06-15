@@ -19,7 +19,7 @@
         "dist"
     ],
     "references": [
-        { "path": "../../packages/primary" },
-        { "path": "../../packages/secondary" }
+        { "path": "../../packages/primary/tsconfig.json" },
+        { "path": "../../packages/secondary/tsconfig.json" }
     ]
 }
