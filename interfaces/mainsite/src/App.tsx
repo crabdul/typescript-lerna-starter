@@ -4,7 +4,7 @@ import { World } from "secondary";
 
 const App = () => (
   <div>
-    <Hello hello="Crab" />
+    <Hello name="Crab" />
     <World />
   </div>
 );
