@@ -1,15 +1,18 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+const getAliasForProject = require("@microsoft/webpack-project-references-alias")
+  .getAliasForProject;
 
 module.exports = {
   mode: "development",
   entry: "./src/index",
   resolve: {
     extensions: ["*", ".ts", ".tsx", ".js", ".jsx"],
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
+    // alias: {
+    //   "@": path.resolve(__dirname, "src"),
+    //   ...getAliasForProject(),
+    // },
   },
   output: {
     filename: "main.js",
@@ -18,11 +21,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts|tsx)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: [
           {
             loader: "babel-loader",
+          },
+        ],
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "ts-loader",
+            options: {
+              transpileOnly: true,
+            },
           },
         ],
       },
